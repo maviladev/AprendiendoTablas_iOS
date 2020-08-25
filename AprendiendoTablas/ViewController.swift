@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //No olvidar
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: "TweetTableViewCell")
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "mi-celda")
         //Para interactuar, implementar el delegate
         tableView.delegate = self
@@ -44,8 +45,12 @@ extension ViewController: UITableViewDataSource {
     
     // 2. Metodo para saber que celdas deben mostrarse.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mi-celda", for: indexPath)
-        cell.textLabel?.text = "Soy la celda #\(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TweetTableViewCell", for: indexPath)
+        
+        if let newCell = cell as? TweetTableViewCell {
+         newCell.setUpCell(username: "@usuario\(indexPath.row)", message: "Soy un tweet!")
+        }
+        
         return cell
     }
 }

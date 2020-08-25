@@ -13,6 +13,8 @@
 		C9468AE024F3E2A40007EEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9468ADE24F3E2A40007EEF0 /* Main.storyboard */; };
 		C9468AE224F3E2A60007EEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9468AE124F3E2A60007EEF0 /* Assets.xcassets */; };
 		C9468AE524F3E2A60007EEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9468AE324F3E2A60007EEF0 /* LaunchScreen.storyboard */; };
+		C9468AEF24F3EEAE0007EEF0 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9468AED24F3EEAE0007EEF0 /* TweetTableViewCell.swift */; };
+		C9468AF024F3EEAE0007EEF0 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9468AEE24F3EEAE0007EEF0 /* TweetTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C9468AE124F3E2A60007EEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9468AE424F3E2A60007EEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9468AE624F3E2A60007EEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9468AED24F3EEAE0007EEF0 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		C9468AEE24F3EEAE0007EEF0 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		C9468AD724F3E2A40007EEF0 /* AprendiendoTablas */ = {
 			isa = PBXGroup;
 			children = (
+				C9468AEC24F3EE150007EEF0 /* Cells */,
 				C9468AD824F3E2A40007EEF0 /* AppDelegate.swift */,
 				C9468ADA24F3E2A40007EEF0 /* SceneDelegate.swift */,
 				C9468ADC24F3E2A40007EEF0 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				C9468AE624F3E2A60007EEF0 /* Info.plist */,
 			);
 			path = AprendiendoTablas;
+			sourceTree = "<group>";
+		};
+		C9468AEC24F3EE150007EEF0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C9468AED24F3EEAE0007EEF0 /* TweetTableViewCell.swift */,
+				C9468AEE24F3EEAE0007EEF0 /* TweetTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 				C9468AE524F3E2A60007EEF0 /* LaunchScreen.storyboard in Resources */,
 				C9468AE224F3E2A60007EEF0 /* Assets.xcassets in Resources */,
 				C9468AE024F3E2A40007EEF0 /* Main.storyboard in Resources */,
+				C9468AF024F3EEAE0007EEF0 /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				C9468ADD24F3E2A40007EEF0 /* ViewController.swift in Sources */,
 				C9468AD924F3E2A40007EEF0 /* AppDelegate.swift in Sources */,
 				C9468ADB24F3E2A40007EEF0 /* SceneDelegate.swift in Sources */,
+				C9468AEF24F3EEAE0007EEF0 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
